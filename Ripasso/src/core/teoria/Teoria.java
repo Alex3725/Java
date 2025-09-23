@@ -91,4 +91,29 @@ public class Teoria {
         }
         System.out.println("La somma degli elementi dell'array è: " + somma);
     }
+    public enum Giorni{ //costanti
+        LUNEDI,
+        MARTEDI,
+        MERCOLEDI,
+        GIOVEDI,
+        VENERDI,
+        SABATO,
+        DOMENICA
+    }
+
+    public void esercizioSwitchExpression(){
+
+        int s;
+
+        System.out.print("inserisci un numero: ");
+        s = scanner.nextInt();
+
+        Giorni[] giorni = Giorni.values(); // ritorna un Array con tutti i giorni
+
+        String risultato = switch (s){
+            case 20,30,40,50 -> "hai indovinato";
+            default -> "non hai indovinato";
+        };
+        System.out.println(risultato);
+    }
 }
