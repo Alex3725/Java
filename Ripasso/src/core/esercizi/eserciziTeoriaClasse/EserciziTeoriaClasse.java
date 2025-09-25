@@ -143,19 +143,49 @@ public class EserciziTeoriaClasse {
         }
         System.out.println(risultato);
     }
-    public void es7(){
+    public void es7() {
         System.out.println("inserire un numero da 1 a 10: ");
+        float sent = 0;
+        while ((sent <= 0 || sent > 10)) {
+            if (sca.hasNextFloat()) {
+                sent = sca.nextFloat();
+            }else {
+                System.out.println("ERRORE: voto non valido");
+                sent = 0;
+                sca.nextLine();
+            }
+        }
+        String finale = "";
+        switch ((int) sent) {
+            case 1, 2, 3, 4 :
+                finale = "insufficiente";
+                break;
+            case 5 :
+                finale = "mediocre";
+                break;
+            case 6 :
+                finale = "sufficiente";
+                break;
+            case 7, 8 :
+                finale = "buono";
+                break;
 
-        int sent = sca.nextInt();
-        String risultato = switch (sent ){
-            case 1,2,3,4 -> "insufficente";
-            case 5 -> "mediocre";
-            case 6 -> "sufficente";
-            case 7,8 -> "buono";
-            case 9 -> "distinto";
-            case 10 -> "ottimo";
-            default -> "voto fuori range";
+            case 9 :
+                finale = "distinto";
+                break;
+            case 10 :
+                finale = "ottimo";
+                break;
+            default :
+                finale = "ERRORE: voto fuori range";
+
+                break;
         };
-        System.out.println(risultato);
+        System.out.println(finale);
+    }
+
+    public void prova(){
+        String ciao = "2";
+
     }
 }

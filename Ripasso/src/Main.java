@@ -1,3 +1,4 @@
+import core.esercizi.es20250925.Es20250925;
 import core.esercizi.eserciziTeoriaClasse.EserciziTeoriaClasse;
 
 public class Main {
@@ -16,9 +17,13 @@ public class Main {
 
         EserciziTeoriaClasse essercitazione = new EserciziTeoriaClasse();
 
+        Es20250925 es = new Es20250925();
+
         //essercitazione.es1();
         //essercitazione.es3();
-        essercitazione.es6();
+        //essercitazione.es7();
+
+        es.es2();
     }
 }
 
