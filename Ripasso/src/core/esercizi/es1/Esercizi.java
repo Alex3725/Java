@@ -1,5 +1,6 @@
-package core.esercizi;
+package core.esercizi.es1;
 
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Esercizi {
@@ -59,12 +60,46 @@ public class Esercizi {
             int count = 0;
             for (String titolo : TITOLI){
                 count++;
+                //String formatted = String.format();
                 System.out.println(count+")\t"+titolo+ "\t\t\t\t\t\t Euro: " + PREZZI[count-1]);
 
             }
             System.out.print("->");
             sentinella = scanner.nextInt();
+            switch (sentinella){
+                case 1 :
+                    somma += PREZZI[0];
+                    break;
+                case 2 :
+                    somma += PREZZI[1];
+                    break;
+                case 3 :
+                    somma += PREZZI[2];
+                    break;
+                case 4 :
+                    somma += PREZZI[3];
+                    break;
+                case 5 :
+                    somma += PREZZI[4];
+                    break;
+                case 6 :
+                    somma += PREZZI[5];
+                    break;
+                case 7 :
+                    somma += PREZZI[6];
+                    break;
+                case 8 :
+                    somma += PREZZI[7];
+                    break;
+                case 9 :
+                    somma += PREZZI[8];
+                    break;
+                case 10 :
+                    somma += PREZZI[9];
+                    break;
 
+                default :  ;
+            }
             if (sentinella == 1){
                 somma += PREZZI[0];
 
@@ -92,7 +127,7 @@ public class Esercizi {
             };
             System.out.println("Il tuo saldo e di: "+ somma+"€");
 
-            if (somma >= 50){
+            if (somma >= 50 && somma <= 50){
                 System.out.println("e hai in regalo Harry potter");
             }else if (somma > 40){
                 System.out.println("e hai in regalo I promessi sposi");
@@ -102,8 +137,8 @@ public class Esercizi {
             scanner.nextLine();
             String sentYN = scanner.nextLine();
 
-            if (sentYN == "N" || sentYN == "n" ){
-                System.out.println("grazie di averci scelto");
+            if (Objects.equals(sentYN,"N") || Objects.equals(sentYN,"n")){
+                System.out.println("grazie di averci scelto il tuo conto finale e: " + somma);
                 break;
             }
 
