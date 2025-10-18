@@ -84,30 +84,47 @@ public class Bicicletta {
     }
 
 
-    public void pedala(){
+    public int pedala(){
         if (this.velocita > this.limite[this.marcia-1]){
                 System.out.println("cambia marcia, o rallenta per aumentare la velocità");
+                return -1;
             }else {
             this.velocita += 5;
+            return 0;
         }
     }
-    public void frena(){
+    public int frena(){
         int velocita = this.velocita;
         if (velocita -5 < 0) {
             System.out.println("stai andando in retromarcia :)");
         }if (velocita - 5 == 0){
             System.out.println("sei fermo");
-        }else this.velocita += 5;
+        }else {
+            if (velocita -1 <= marcieMax -5){
+                return -1;
+            }else {
+                this.velocita -= 1;
+                return 0;
+            }
+
+        }
 
     }
     public void stampaStato(){
         System.out.println("La tua bici è una:["+this.tipo+"]\n Con marca:["+this.marca+"]\n Stai andando a:["+this.velocita+"km/h]\n Con marcia:["+this.marcia+"]\nSulla bici hai :["+this.marcieMax+"]");
     }
     public void incrementaMarcia(){
-        this.marcia = marcia;
+         int marcia = this.marcia;
         if (marcia + 1 > marcieMax){
             System.out.println("Errore: non hai piu marcie");
         }else this.marcia ++;
     }
+    public void decrementaMarcia(){
+        int marcia = this.marcia;
+        if (marcia - 1 <= 0){
+            System.out.println("Errore: non hai piu marcie");
+        }else this.marcia --;
+    }
+
 
 }

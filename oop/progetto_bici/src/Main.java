@@ -1,7 +1,8 @@
-import core.Bicicletta;
+import core.Menu;
 
 public class Main {
     public static void main(String[] args) {
-        Bicicletta b = new Bicicletta()
+        Menu menu = new Menu();
+        menu.gui();
     }
 }
