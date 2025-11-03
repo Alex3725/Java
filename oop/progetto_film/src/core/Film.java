@@ -4,8 +4,12 @@ public class Film {
     private String titolo;
     private String regista;
     private String genere;
+
     private int annoUscita;
     private int stelle; //valutazione del film
+    private final int ANNOCORRENTE = 2025;
+
+
 
     //costruttore
     public Film(String titolo, String regista, int annoUscita, String genere, int stelle) {
@@ -73,16 +77,16 @@ public class Film {
     }
 
     public boolean isClassico() {
-        final int ANNOCORRENTE = 2000;
-        if (this.annoUscita < ANNOCORRENTE){
+
+        if (this.annoUscita < 2000){
             return true;
         }
         return false;
     }
 
     public boolean isNuovo(){
-        final int ANNOCORRENTE = 2025;
-        if (this.annoUscita >= 2025 -2 ){
+
+        if (this.annoUscita >= ANNOCORRENTE - 2 ){
             return true;
         }
         return false;

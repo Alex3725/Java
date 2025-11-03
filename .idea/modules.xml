@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/oop/ArrayList/ArrayList.iml" filepath="$PROJECT_DIR$/oop/ArrayList/ArrayList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Concessionaria/Concessionaria.iml" filepath="$PROJECT_DIR$/Concessionaria/Concessionaria.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java.iml" filepath="$PROJECT_DIR$/.idea/Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ripasso/Ripasso.iml" filepath="$PROJECT_DIR$/Ripasso/Ripasso.iml" />
+      <module fileurl="file://$PROJECT_DIR$/preVerifica/preVerifica.iml" filepath="$PROJECT_DIR$/preVerifica/preVerifica.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop/progetto_bici/progetto_bici.iml" filepath="$PROJECT_DIR$/oop/progetto_bici/progetto_bici.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop/progetto_classe/progetto_classe.iml" filepath="$PROJECT_DIR$/oop/progetto_classe/progetto_classe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop/progetto_film/progetto_film.iml" filepath="$PROJECT_DIR$/oop/progetto_film/progetto_film.iml" />
+    </modules>
+  </component>
+</project>
