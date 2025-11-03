@@ -6,95 +6,77 @@ package core;
 
 public class Pc {
 
-    private final String marca;
-    private final String cpu;
-    private Integer ramGB;
-    private Integer ssdGB;
-    private final int id;
 
-    //Attributi Extra
-    private float costo ;
-
-    static int countID = 0;
-    static final String SISTEMA_OPERATIVO_PREDEFINITO = "Windows 11";
-    static final int TENSIONE_ALIMENTAZIONE = 220;
+    public static final String SISTEMA_OPERATIVO_PREDEFINITO = "Windows 10";
+    public static final int TENSIONE_ALIMENTAZIONE = 220;
 
 
-    public static int getCountID() {
-        return countID;
+    private String marca;
+    private String cpu;
+    private int ramGB;
+    private int ssdGB;
+
+
+    public Pc() {
+        this.marca = "Sconosciuta";
+        this.cpu = "Non specificata";
+        this.ramGB = 0;
+        this.ssdGB = 0;
     }
 
-    public Pc(String marca, String cpu, int ramGB, int ssdGB) {
-        this(marca, cpu,0);
-        this.ramGB = ramGB;
-        this.ssdGB = ssdGB;
 
-    }
-    public Pc(String marca, String cpu,float costo) {
-        this.marca = marca;
-        this.cpu = cpu;
-        this.costo = costo;
-
-        this.id = countID;
-        countID++;
-    }
-    //costruttore copia
-    public Pc(Pc pcCopia){
-        this(pcCopia.marca,pcCopia.cpu,pcCopia.ramGB,pcCopia.ramGB);
+    public boolean trySetMarca(String marca) {
+        if (marca != null && !marca.isBlank()) {
+            setMarca(marca);
+            return true;
+        }
+        System.out.println("Marca non valida!");
+        return false;
     }
 
-    //getter
-
-    public String getMarca() {
-        return this.marca;
+    public boolean trySetCpu(String cpu) {
+        if (cpu != null && !cpu.isBlank()) {
+            setCpu(cpu);
+            return true;
+        }
+        System.out.println("CPU non valida!");
+        return false;
     }
 
-    public String getCpu() {
-        return this.cpu;
+    public boolean trySetRamGB(int ram) {
+        if (ram > 0 && ram <= 256) {
+            setRamGB(ram);
+            return true;
+        }
+        System.out.println("RAM non valida!");
+        return false;
     }
 
-    public Integer getRamGB() {
-        return this.ramGB;
+    public boolean trySetSsdGB(int ssd) {
+        if (ssd > 0 && ssd <= 4096) {
+            setSsdGB(ssd);
+            return true;
+        }
+        System.out.println("SSD non valido!");
+        return false;
     }
 
-    public Integer getSsdGB() {
-        return this.ssdGB;
-    }
+    // sett
+    private void setMarca(String marca) { this.marca = marca; }
+    private void setCpu(String cpu) { this.cpu = cpu; }
+    private void setRamGB(int ramGB) { this.ramGB = ramGB; }
+    private void setSsdGB(int ssdGB) { this.ssdGB = ssdGB; }
 
-    public float getCosto() {
-        return this.costo;
-    }
-
-    public int getId() {
-        return this.id;
-    }
-
-    //setter
-
-
-    public void setCosto(float costo) {
-        this.costo = costo;
-    }
-
-    public void setSsdGB(Integer ssdGB) {
-        this.ssdGB = ssdGB;
-    }
-
-    public void setRamGB(Integer ramGB) {
-        this.ramGB = ramGB;
-    }
 
     @Override
     public String toString() {
-        return "Pc{" +
-                "marca='" + this.marca + '\'' +
-                ", cpu='" + this.cpu + '\'' +
-                ", ramGB=" + this.ramGB +
-                ", ssdGB=" + this.ssdGB +
-                ", id=" + this.id +
-                ", costo=" + this.costo +
-                ", Sistema Operativo=" + SISTEMA_OPERATIVO_PREDEFINITO +
-                ", TENSIONE ALIMENTAZIONE=" + TENSIONE_ALIMENTAZIONE +
-                '}';
+        return "Pc [" +
+                "Marca='" + marca + '\'' +
+                ", CPU='" + cpu + '\'' +
+                ", RAM=" + ramGB + " GB" +
+                ", SSD=" + ssdGB + " GB" +
+                ", Sistema Operativo='" + SISTEMA_OPERATIVO_PREDEFINITO + '\'' +
+                ", Tensione=" + TENSIONE_ALIMENTAZIONE + "V" +
+                ']';
     }
 }
