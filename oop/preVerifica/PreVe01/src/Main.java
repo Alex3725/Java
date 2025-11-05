@@ -3,9 +3,6 @@ import java.util.Scanner;
 
 public class Main {
     Scanner sc = new Scanner(System.in);
-    //Const ERRor
-    public static final int ERROR_INT= -1;
-    public static final String ERROR_STRING= "";
 
     // metodi Static
 
@@ -13,10 +10,9 @@ public class Main {
         Scanner sc =new Scanner(System.in);
         int outPut;
 
-        if (!sc.hasNextInt()){
+        while (!sc.hasNextInt()){
             System.out.println("ERROR: errore inserimento");
             sc.nextLine();
-            return ERROR_INT;
         }
         outPut = sc.nextInt();
         sc.nextLine();
@@ -26,22 +22,22 @@ public class Main {
     static String inputString(){
         Scanner sc =new Scanner(System.in);
         String outPut;
+        while (true) {
+            if (!sc.hasNextLine()) {
+                System.out.println("ERROR: errore inserimento");
+                sc.nextLine();
+                continue;
+            }
+            outPut = sc.nextLine();
+            if (outPut.isBlank()) {
+                System.out.println("ERRORE: Campo vuoto non consentito!");
+                continue;
+            }
 
-        if (!sc.hasNextLine()){
-            System.out.println("ERROR: errore inserimento");
+            System.out.print("hai inserito il[" +outPut+"] premere invio per continuare" );
             sc.nextLine();
-            return ERROR_STRING;
+            return outPut;
         }
-        outPut = sc.nextLine();
-        if (outPut.isBlank())
-        {
-            System.out.println("ERRORE: Campo vuoto non consentito!");
-            return ERROR_STRING;
-        }
-
-        outPut = sc.nextLine();
-        sc.nextLine();
-        return outPut;
     }
     static boolean inputBoolean(){
         Scanner sc =new Scanner(System.in);
@@ -68,22 +64,22 @@ public class Main {
                 """);
 
         int scelta = sc.nextInt();
-        switch (scelta){
-            case 1 -> {
-                return modalitaFunzionamento.Eco;
-            }
-            case 2 -> {
-                return modalitaFunzionamento.Performance;
-            }
-            case 3 -> {
-                return modalitaFunzionamento.Standby;
-            }
-            case 4 -> {
-                return modalitaFunzionamento.Manuale;
-            }
-            default -> {
-                System.out.println("error: in automatico verra inpostata Eco");
-                return modalitaFunzionamento.Eco;
+        while (true){
+            switch (scelta) {
+                case 1 -> {
+                    return modalitaFunzionamento.Eco;
+                }
+                case 2 -> {
+                    return modalitaFunzionamento.Performance;
+                }
+                case 3 -> {
+                    return modalitaFunzionamento.Standby;
+                }
+                case 4 -> {
+                    return modalitaFunzionamento.Manuale;
+                }
+                default -> System.out.println("error: :( ");
+
             }
         }
     }
@@ -129,28 +125,45 @@ public class Main {
 
 
                             System.out.println("inserire il nome");
-                            while (!(inputString().isBlank())) {
-                                System.out.println("error: ");
-                            }
                             nome = inputString();
                             System.out.println("inserire come si sesidera la batteria se ce");
                             while (inputBoolean()) {
                                 System.out.println("inserire il valore della batteria");
-                                if (inputInt() < -1 || inputInt() > 120) {
+                                int lb = inputInt();
+                                if (lb < -1 || lb > 120) {
                                     System.out.println("error inserimento batteria");
                                     continue;
                                 }
-                                livelloBatteria = inputInt();
+                                livelloBatteria = (Integer) lb;
                                 break;
                             }
                             livelloBatteria = null;
 
-
-
                             SmartDevice scNew = new SmartDevice(nome,inputBoolean(),richiestaModalita(),livelloBatteria);
                             listSmart.add(scNew);
-                            
                         }
+                        case 2 -> listPrint(listSmart);
+
+                        case 3 -> {
+                            int app = getSceltOg(listSmart);
+                            SmartDevice appOg = listSmart.get(app);
+
+                            System.out.println("modifica nome");
+                            while (true){
+                                String nomeApp = inputString();
+                                if (!appOg.trySetNomeDispositivo(nomeApp)) continue;
+                                break;
+                            }
+                            System.out.print("scegli la modalita dello smart");
+                            modalitaFunzionamento m = richiestaModalita();
+
+                            appOg.trySetModalita(m);
+                        }
+                        case 4->{
+                            int app = getSceltOg(listSmart);
+                            listSmart.remove(app);
+                        }
+
                         case -1 ->{
                             System.out.println("ciao buona giornata");
                             pausa();
@@ -169,5 +182,22 @@ public class Main {
             }
 
         }while (scelta != -1);
+    }
+
+    private static int getSceltOg(ArrayList<SmartDevice> listSmart) {
+        System.out.println("scegli un oggeto");
+        listPrint(listSmart);
+        int app = inputInt();
+        while (app < 0 || app >= listSmart.size()){
+            app = inputInt();
+        }
+        return app;
+    }
+
+    private static void listPrint(ArrayList<SmartDevice> listSmart) {
+        for (int i = 0; i < listSmart.size(); i++) {
+            System.out.println((i+1) + ")" + listSmart.get(i));
+            pausa();
+        }
     }
 }
