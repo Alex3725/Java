@@ -58,7 +58,7 @@ public class Main {
     }
 
 
-    /*public static void stampaListaPC(ArrayList<Pc> listaPC) {
+    public static void stampaListaPC(ArrayList<Pc> listaPC) {
         if (listaPC.isEmpty()) {
             System.out.println("Nessun PC registrato.\n");
             return;
@@ -68,15 +68,16 @@ public class Main {
 
         // uso AtomicInteger perché il forEach non consente indice incrementale diretto
         //java.util.concurrent.atomic.AtomicInteger indice = new java.util.concurrent.atomic.AtomicInteger(1);
-        AtomicInteger count = new AtomicInteger();
+
+        int count = 0;
         listaPC.forEach(pc -> {
-            count.getAndIncrement();
-            System.out.println(indice.getAndIncrement() + ") " + pc);
+            count++;
+            System.out.println(count + ") " + pc);
         });
         // chiedere al proff :(
         System.out.println(); // linea vuota finale
     }
-    */
+
     ///
     ///
     ///
@@ -118,7 +119,7 @@ public class Main {
                     if (ssd != ERROR_INT) nuovo.trySetSsdGB(ssd);
 
                     listaPC.add(nuovo);
-                    System.out.println("✅ Pc aggiunto con successo!\n");
+                    System.out.println("Pc aggiunto con successo!\n");
                     pausa();
                 }
 
