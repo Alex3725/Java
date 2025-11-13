@@ -42,7 +42,7 @@ public class Main {
     static boolean inputBoolean(){
         Scanner sc =new Scanner(System.in);
         String scelta;
-        System.out.println("Y/N");
+        System.out.println("scegli se si  o no Y/N");
         scelta = sc.nextLine();
         boolean outPut = switch (scelta.toLowerCase()){
             case "y" -> true;
@@ -126,14 +126,14 @@ public class Main {
 
                             System.out.println("inserire il nome");
                             nome = inputString();
-                            System.out.println("inserire come si sesidera la batteria se ce");
+                            System.out.println("inserire se si ha la batteria o no");
                             while (inputBoolean()) {
                                 System.out.println("inserire il valore della batteria");
                                 int lb = inputInt();
                                 if (lb < -1 || lb > 120) {
                                     System.out.println("error inserimento batteria");
                                     continue;
-                                }
+                                } 
                                 livelloBatteria = (Integer) lb;
                                 break;
                             }
