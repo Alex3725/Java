@@ -6,9 +6,11 @@ import java.util.Random;
 
 
 public class Mazzo {
-    private int nCarteMazzo;
+    private int nCarteMazzoIniziale;
     private int nCarteSingoloMazzo;
+    private int nCarteMazzoAttuale;
     private ArrayList<Carta> listaCarte = new ArrayList<>();
+    private int countPescata = 0;
 
     private Colori[] listColori = {Colori.ROSSO,Colori.VERDE,Colori.GIALLO,Colori.BLU};
 
@@ -19,7 +21,8 @@ public class Mazzo {
 
     public Mazzo(int nCarteMazzo) throws Exception {
         if (nCarteMazzo != 40)throw new Exception ("ERROR: per ora implementato solo un mazzo da 40 carte");
-        this.nCarteMazzo = nCarteMazzo;
+        this.nCarteMazzoIniziale = nCarteMazzo;
+        this.nCarteMazzoAttuale = nCarteMazzo;
         this.nCarteSingoloMazzo = nCarteMazzo/4;
 
 
@@ -41,7 +44,7 @@ public class Mazzo {
     }
 
     public int getNumCarteMazzo() {
-        return nCarteMazzo;
+        return nCarteMazzoIniziale;
     }
 
     public Colori[] getListColori() {
@@ -52,9 +55,14 @@ public class Mazzo {
         return id;
     }
 
-    public void creaMazzo(int nCarteSingoloMazzo, Colori coloreMazzo){
-        ArrayList<Carta> list= new ArrayList<>();
+    public int getCountPescata() {
+        return countPescata;
+    }
+    public Carta getCarta(int index){
+        return listaCarte.get(index);
+    }
 
+    public void creaMazzo(int nCarteSingoloMazzo, Colori coloreMazzo){
         for (int i = 0; i < nCarteSingoloMazzo; i++) {
             Carta newCart = new Carta(coloreMazzo,i);
             this.listaCarte.add(newCart);
@@ -65,17 +73,18 @@ public class Mazzo {
     public void shuffle(){
         Carta tmp;
         Random r = new Random();
-        for (int i = 0; i < nCarteMazzo; i++){
+        for (int i = 0; i < nCarteMazzoIniziale; i++){
             Carta cartaBase = listaCarte.get(i);
-            tmp = listaCarte.set(r.nextInt(0,nCarteMazzo),cartaBase);
+            tmp = listaCarte.set(r.nextInt(0, nCarteMazzoIniziale),cartaBase);
             listaCarte.set(i,tmp);
         }
     }
 
-    public Carta draw(){
-        Carta carta = listaCarte.getFirst();
-        listaCarte.remove(carta);
-        return carta;
+    public Carta draw() throws Exception {
+        if (countPescata > nCarteMazzoIniziale)throw new Exception ("ERROR: hai pescato troppo non ci sono piu carte");
+        countPescata++;
+        nCarteMazzoAttuale--;
+        return listaCarte.removeFirst();
     }
 
     public void printMazzo(){
@@ -87,49 +96,12 @@ public class Mazzo {
     @Override
     public String toString() {
         return "Mazzo{\n" +
-                "nCarteMazzo=" + nCarteMazzo +
+                "nCarteMazzoIniziale=" + nCarteMazzoIniziale +
                 ", nCarteSingoloMazzo=" + nCarteSingoloMazzo +
                 ",\n listaCarte=" + listaCarte +
                 ",\n listColori=" + Arrays.toString(listColori) +
                 ", id=" + id +"\n"+
                 '}';
-    }
-
-    //carte
-    public class Carta {
-        private Colori colore;
-        private int numero;
-        private boolean isSpecial = false;
-        private Special tipoSpe;
-
-
-        private int id;
-        private static int countID;
-
-
-        public Carta(Colori colore, int numero) {
-            this.colore = colore;
-            this.numero = numero;
-
-            countID++;
-            this.id = countID;
-        }
-
-        public Carta(Colori colore, int numero, boolean isSpecial, Special tipoSpe) {
-            this(colore, numero);
-            this.isSpecial = isSpecial;
-            this.tipoSpe = tipoSpe;
-        }
-
-        @Override
-        public String toString() {
-            return "\nCarta|" +
-                    "id=" + id +
-                    "|colore=" + colore +
-                    "|numero=" + numero +
-                    (isSpecial ? ", tipoSpe=" + tipoSpe : "")+
-                    '|';
-        }
     }
 }
 

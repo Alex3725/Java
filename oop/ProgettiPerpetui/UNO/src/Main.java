@@ -17,14 +17,14 @@ public class Main {
         } catch (Exception e) {
             System.out.println(e);
         }finally {
-            pausa(sc);
-            sc.close();
+            pausa();
         }
 
     }
 
-    private static void pausa(Scanner sc) {
-        System.out.println("Premere per continuare");
-        sc.next();
+    public static void pausa() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("\nPremi INVIO per continuare...");
+        sc.nextLine(); // attende input dell’utente
     }
 }
