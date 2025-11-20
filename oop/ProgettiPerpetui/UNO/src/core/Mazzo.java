@@ -1,7 +1,10 @@
 package core;
 
+
+
 import java.util.ArrayList;
 import java.util.Arrays;
+
 import java.util.Random;
 
 
@@ -81,11 +84,31 @@ public class Mazzo {
     }
 
     public Carta draw() throws Exception {
-        if (countPescata > nCarteMazzoIniziale)throw new Exception ("ERROR: hai pescato troppo non ci sono piu carte");
+        if (countPescata > nCarteMazzoAttuale)throw new Exception ("ERROR: hai pescato troppo non ci sono piu carte");
         countPescata++;
         nCarteMazzoAttuale--;
         return listaCarte.removeFirst();
     }
+
+    public ArrayList<Carta> drawTanto(int numCarteDaPescare) throws Exception {
+
+        if (numCarteDaPescare > nCarteMazzoAttuale) {
+            numCarteDaPescare = nCarteMazzoAttuale;
+            throw new Exception("ERROR: hai pescato troppo non ci sono piu carte Ti ho fatto pescare le carte fino al numero massimo"+numCarteDaPescare);
+        }
+        countPescata += numCarteDaPescare;
+        nCarteMazzoAttuale -= numCarteDaPescare;
+
+        // Ottengo la sotto-lista dei primi n elementi
+        ArrayList<Carta> listTMP= new ArrayList<>(listaCarte.subList(0, numCarteDaPescare));
+
+        // Rimuovo le carte pescate dal mazzo originale
+        listaCarte.subList(0, numCarteDaPescare).clear();
+
+        return listTMP;
+    }
+
+
 
     public void printMazzo(){
         for (Carta carta : listaCarte){

@@ -26,6 +26,8 @@ public class Carta {
         this.tipoSpe = tipoSpe;
     }
 
+
+
     @Override
     public String toString() {
         return "\nCarta|" +
