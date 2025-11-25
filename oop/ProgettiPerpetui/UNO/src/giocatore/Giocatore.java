@@ -2,6 +2,7 @@ package giocatore;
 
 import core.Carta;
 
+import java.awt.image.AreaAveragingScaleFilter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -27,6 +28,8 @@ public class Giocatore {
         }
     }
 
+
+
     public Carta sceltaCartaMazzo(Carta cartaBanco){
         Scanner sc = new Scanner(System.in);
         ArrayList<Carta> giocabili =
@@ -46,7 +49,10 @@ public class Giocatore {
 
     }
 
-    private ArrayList<Carta> isPlayable(){
-
+    private ArrayList<Carta> isPlayable(Carta cartaBanco){
+        ArrayList<Carta> app = new ArrayList<>();
+        for (Carta carta: manoDaGiocare){
+            carta.equals(cartaBanco)
+        }
     }
 }

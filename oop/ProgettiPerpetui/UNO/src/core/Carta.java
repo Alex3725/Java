@@ -1,5 +1,7 @@
 package core;
 
+import java.util.Objects;
+
 //carte
 public class Carta {
     private Colori colore;
@@ -36,5 +38,17 @@ public class Carta {
                 "|numero=" + numero +
                 (isSpecial ? ", tipoSpe=" + tipoSpe : "")+
                 '|';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Carta carta = (Carta) o;
+        return numero == carta.numero && isSpecial == carta.isSpecial && id == carta.id && colore == carta.colore && tipoSpe == carta.tipoSpe;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(colore, numero, isSpecial, tipoSpe, id);
     }
 }
