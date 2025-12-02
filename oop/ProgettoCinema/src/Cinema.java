@@ -1,8 +1,7 @@
-import java.awt.image.AreaAveragingScaleFilter;
 import java.util.ArrayList;
 
 public class Cinema {
-    ArrayList<Proiezione> proieziones = new ArrayList<>();
+    ArrayList<Proiezione> proiezioni = new ArrayList<>();
     private final int postiMax;
     private final String indirizzo;
 
@@ -26,16 +25,27 @@ public class Cinema {
         return nome;
     }
 
-    public ArrayList<Proiezione> getProieziones() {
-        return proieziones;
+    public ArrayList<Proiezione> getProiezioni() {
+        return proiezioni;
     }
 
     public void aggiungiProiezione(Proiezione p){
-        proieziones.add(p);
+        proiezioni.add(p);
     }
     public void rimuoviProiezione(int index){
-        if (index >= proieziones.size()|| index < 0)throw new IndexOutOfBoundsException("indice errato: "+ index);
+        if (index >= proiezioni.size()|| index < 0)throw new IndexOutOfBoundsException("indice errato: "+ index);
 
-        System.out.println("Hai rimosso con successo: "+ proieziones.remove(index));
+        System.out.println("Hai rimosso con successo: "+ proiezioni.remove(index));
     }
+
+    @Override
+    public String toString() {
+        return "Cinema{" +
+                "postiMax=" + postiMax +
+                ", indirizzo='" + indirizzo + '\'' +
+                ", nome='" + nome + '\'' +
+                '}';
+    }
+
+
 }

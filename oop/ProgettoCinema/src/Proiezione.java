@@ -4,10 +4,10 @@ import java.util.NoSuchElementException;
 
 public class Proiezione {
     private String titolo;
-    private Date durata;
+    private int durata;
     private ArrayList<String> posti = new ArrayList<>();
 
-    public Proiezione(String titolo, Date durata) {
+    public Proiezione(String titolo, int durata) {
         this.titolo = titolo;
         this.durata = durata;
 
@@ -17,7 +17,7 @@ public class Proiezione {
         return titolo;
     }
 
-    public Date getDurata() {
+    public int getDurata() {
         return durata;
     }
 
@@ -29,7 +29,7 @@ public class Proiezione {
         this.titolo = titolo;
     }
 
-    public void setDurata(Date durata) {
+    public void setDurata(int durata) {
         this.durata = durata;
     }
 
@@ -38,6 +38,15 @@ public class Proiezione {
     }
     public void annullaPosto(String p){
         if (!posti.contains(p))throw new NoSuchElementException("Posto non trovato: "+p);
-        
+        System.out.println("Hai annullato il posto["+posti.remove(p)+"]");
+
+    }
+
+    @Override
+    public String toString() {
+        return "Proiezione{" +
+                "titolo='" + titolo + '\'' +
+                ", durata=" + durata +
+                '}';
     }
 }
