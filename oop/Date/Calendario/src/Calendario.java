@@ -1,25 +1,24 @@
 import java.util.ArrayList;
 import  java.time.LocalDate;
 
-public class Calendar {
-    private ArrayList<Event> events;
+public class Calendario {
+    private ArrayList<Evento> events;
 
-    public Calendar() {
+    public Calendario() {
         this.events = new ArrayList<>();
     }
 
     public LocalDate dataOggi(){
         return LocalDate.now();
     }
-    public void createEvent(Event event){
+
+    public void createEvent(Evento event){
         events.add(event);
         System.out.println("Evento creato: "+event);
-
     }
+
     public void updateEvent(int index, String tito, LocalDate date, boolean ricorrente){
         if (index < 0 || index >= events.size())throw new IndexOutOfBoundsException("indice non valido");
-
-        //Event eMod = events.get(index);
         try {
             events.get(index).setTitolo(tito);
             events.get(index).setDate(date);
@@ -32,5 +31,9 @@ public class Calendar {
     public void removeEvent(int index){
         if (index < 0 || index >= events.size())throw new IndexOutOfBoundsException("indice non valido");
         System.out.println("Hai rimosso"+events.remove(index));
+    }
+
+    public ArrayList<Evento> getEvents(){
+        return events;
     }
 }

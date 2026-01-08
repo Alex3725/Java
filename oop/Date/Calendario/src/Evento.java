@@ -1,18 +1,18 @@
 import java.time.LocalDate;
 
-public class Event {
+public class Evento {
 
     private String titolo;
     private LocalDate date;
     private boolean ricorrente;
 
-    public Event(String titolo, LocalDate date) {
+    public Evento(String titolo, LocalDate date) {
         this.titolo = titolo;
         this.date = date;
         this.ricorrente = false;
     }
 
-    public Event(String titolo, LocalDate date, boolean ricorrente) {
+    public Evento(String titolo, LocalDate date, boolean ricorrente) {
         this(titolo, date);
         this.ricorrente = ricorrente;
     }
@@ -50,3 +50,4 @@ public class Event {
                 '}';
     }
 }
+
