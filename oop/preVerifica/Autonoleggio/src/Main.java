@@ -9,12 +9,14 @@ public class Main {
         int sent = -111111111;
         while(sent != 0) {
             try {
-                System.out.println("""
-                        1) Aggiungi Cliente
-                        2) Aggiungi contratto
-                        3) Aggiungi auto
-                        """);
-                if (!balzSent)sent = sc.nextInt();
+                if (!balzSent) {
+                    System.out.println("""
+                            1) Aggiungi Cliente
+                            2) Aggiungi contratto
+                            3) Aggiungi auto
+                            """);
+                    sent = sc.nextInt();
+                }
                 switch (sent){
                     case 1 ->{
                         try {
@@ -23,8 +25,10 @@ public class Main {
                             String nome = sc.nextLine();
                             private String cognome;
                             private String codiceFiscale;
+                            balzSent = false;
                         }catch (Exception e){
-                            throw new IllegalArgumentException("mancato ")
+                            throw new IllegalArgumentException("mancato inserimento");
+                            balzSent = true;
                         }
                     }
                     default -> {
