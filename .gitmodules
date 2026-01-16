@@ -1,3 +1,6 @@
 [submodule "oop/primo-periodo"]
 	path = oop/primo-periodo
 	url = git@github.com:Alex3725/Java-oop-PrimoPeriodo.git
+[submodule "oop/secondo-periodo"]
+	path = oop/secondo-periodo
+	url = git@github.com:Alex3725/Java-oop-SecondoPeriodo.git
