@@ -2,13 +2,173 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9464f64c-76c0-4c19-a2ec-e73b30d7eed4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Concessionaria/Concessionaria.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ripasso/Ripasso.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop/ArrayList/ArrayList.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop/progetto_bici/progetto_bici.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop/progetto_classe/progetto_classe.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/oop/progetto_film/progetto_film.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/preVerifica/preVerifica.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ArrayList/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ArrayList/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ArrayList/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ArrayList/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ArrayList/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ArrayList/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ArrayList/src/core/Lista.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ArrayList/src/core/Studente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/Date/Calendario/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/Date/Calendario/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/Date/Calendario/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/Date/Calendario/.idea/material_theme_project_new.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/Date/Calendario/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/Date/Calendario/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/Date/Calendario/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/Date/Calendario/Calendario.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/Date/Calendario/src/Calendario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/Date/Calendario/src/Evento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/Date/Calendario/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/Eccezioni/EsercitazioneEccezioni/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/Eccezioni/EsercitazioneEccezioni/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/Eccezioni/EsercitazioneEccezioni/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/Eccezioni/EsercitazioneEccezioni/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/Eccezioni/EsercitazioneEccezioni/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/Eccezioni/EsercitazioneEccezioni/src/ColoreTerminale.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/Eccezioni/EsercitazioneEccezioni/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/Eccezioni/EsercitazioneEccezioni/src/Operazione.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/Eccezioni/progettoBici.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/Eccezioni/progettoBici/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/Eccezioni/progettoBici/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/Eccezioni/progettoBici/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/Eccezioni/progettoBici/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/Eccezioni/progettoBici/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/Eccezioni/progettoBici/src/Bicicletta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/Eccezioni/progettoBici/src/Colori.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/Eccezioni/progettoBici/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/EsercitazioneEccezioni/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/EsercitazionePrePc/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/EsercitazionePrePc/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/EsercitazionePrePc/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/EsercitazionePrePc/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/EsercitazionePrePc/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/EsercitazionePrePc/EsercitazionePrePc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/oop/EsercitazionePrePc/EsercitazionePrePc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/EsercitazionePrePc/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/EsercitazionePrePc/src/core/Pc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/EsercitazioneUtenti/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/EsercitazioneUtenti/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/EsercitazioneUtenti/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/EsercitazioneUtenti/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/EsercitazioneUtenti/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/EsercitazioneUtenti/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/EsercitazioneUtenti/src/core/Utente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/GamePockemon/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/GamePockemon/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/GamePockemon/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/GamePockemon/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/GamePockemon/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/GamePockemon/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/GamePockemon/src/core/Attacco.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/GamePockemon/src/core/Elemento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/GamePockemon/src/core/Pokemon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettiPerpetui/UNO.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettiPerpetui/UNO/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettiPerpetui/UNO/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettiPerpetui/UNO/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettiPerpetui/UNO/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettiPerpetui/UNO/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettiPerpetui/UNO/UNO.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettiPerpetui/UNO/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettiPerpetui/UNO/src/core/Carta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettiPerpetui/UNO/src/core/Colori.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettiPerpetui/UNO/src/core/Mazzo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettiPerpetui/UNO/src/core/Special.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettiPerpetui/UNO/src/core/Tavolo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettiPerpetui/UNO/src/giocatore/Giocatore.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettoCinema/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettoCinema/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettoCinema/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettoCinema/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettoCinema/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettoCinema/src/Cinema.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettoCinema/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettoCinema/src/Proiezione.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettoTemperatura/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettoTemperatura/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettoTemperatura/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettoTemperatura/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettoTemperatura/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettoTemperatura/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/ProgettoTemperatura/src/core/Temperatura.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/preVerifica/Autonoleggio/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/preVerifica/Autonoleggio/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/preVerifica/Autonoleggio/.idea/material_theme_project_new.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/preVerifica/Autonoleggio/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/preVerifica/Autonoleggio/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/preVerifica/Autonoleggio/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/preVerifica/Autonoleggio/src/Auto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/preVerifica/Autonoleggio/src/Cliente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/preVerifica/Autonoleggio/src/Contratto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/preVerifica/Autonoleggio/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/preVerifica/PreVe01.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/preVerifica/PreVe01/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/preVerifica/PreVe01/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/preVerifica/PreVe01/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/preVerifica/PreVe01/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/preVerifica/PreVe01/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/preVerifica/PreVe01/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/preVerifica/PreVe01/src/SmartDevice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/preVerifica/PreVe01/src/modalitaFunzionamento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/preVerifica/untitled/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/preVerifica/untitled/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/preVerifica/untitled/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/preVerifica/untitled/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/preVerifica/untitled/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/preVerifica/untitled/untitled.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/preVerifica/untitled1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/preVerifica/untitled1/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_bici/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_bici/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_bici/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_bici/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_bici/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_bici/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_bici/src/core/Bicicletta.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_bici/src/core/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_classe/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_classe/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_classe/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_classe/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_classe/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_classe/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_classe/src/core/Studente.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_film/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_film/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_film/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_film/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_film/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_film/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_film/src/core/Film.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_film/src/core/Menu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_pokemon/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_pokemon/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_pokemon/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_pokemon/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_pokemon/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_pokemon/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_pokemon/src/core/Elemento.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/progetto_pokemon/src/core/Pockemon.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/verifica/PrevitaliAlessandro4BI_FilaB/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/verifica/PrevitaliAlessandro4BI_FilaB/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/verifica/PrevitaliAlessandro4BI_FilaB/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/verifica/PrevitaliAlessandro4BI_FilaB/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/verifica/PrevitaliAlessandro4BI_FilaB/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/verifica/PrevitaliAlessandro4BI_FilaB/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/verifica/PrevitaliAlessandro4BI_FilaB/PrevitaliAlessandro4BI_FilaB.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/verifica/PrevitaliAlessandro4BI_FilaB/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/verifica/PrevitaliAlessandro4BI_FilaB/src/PrenotazioneAula.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/vrappedClass/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/vrappedClass/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/vrappedClass/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/vrappedClass/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/vrappedClass/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/vrappedClass/WrapperClass.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/vrappedClass/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/vrappedClass/src/Operazioni.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/oop/vrappedClass/src/somma.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,9 +178,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="34F5713zbSDJv727WWobvrr0GbG" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -31,11 +191,18 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "home",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/alessandro/Java"
+    "last_opened_file_path": "/media/alexdebian/T7/Java/oop/preVerifica/Autonoleggio"
   }
 }]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.240" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="9464f64c-76c0-4c19-a2ec-e73b30d7eed4" name="Changes" comment="" />

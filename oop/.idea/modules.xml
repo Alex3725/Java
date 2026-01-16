@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ArrayList/ArrayList.iml" filepath="$PROJECT_DIR$/ArrayList/ArrayList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/preVerifica/Autonoleggio/Autonoleggio.iml" filepath="$PROJECT_DIR$/preVerifica/Autonoleggio/Autonoleggio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Date/Date.iml" filepath="$PROJECT_DIR$/Date/Date.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Eccezioni/EsercitazioneEccezioni/EsercitazioneEccezioni.iml" filepath="$PROJECT_DIR$/Eccezioni/EsercitazioneEccezioni/EsercitazioneEccezioni.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EsercitazionePrePc/EsercitazionePrePc.iml" filepath="$PROJECT_DIR$/EsercitazionePrePc/EsercitazionePrePc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EsercitazioneUtenti/EsercitazioneUtenti.iml" filepath="$PROJECT_DIR$/EsercitazioneUtenti/EsercitazioneUtenti.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GamePockemon/GamePockemon.iml" filepath="$PROJECT_DIR$/GamePockemon/GamePockemon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/preVerifica/PreVe01/PreVe01.iml" filepath="$PROJECT_DIR$/preVerifica/PreVe01/PreVe01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProgettiPerpetui/ProgettiPerpetui.iml" filepath="$PROJECT_DIR$/ProgettiPerpetui/ProgettiPerpetui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProgettoCinema/ProgettoCinema.iml" filepath="$PROJECT_DIR$/ProgettoCinema/ProgettoCinema.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProgettoTemperatura/ProgettoTemperatura.iml" filepath="$PROJECT_DIR$/ProgettoTemperatura/ProgettoTemperatura.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/oop.iml" filepath="$PROJECT_DIR$/.idea/oop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Eccezioni/progettoBici/progettoBici.iml" filepath="$PROJECT_DIR$/Eccezioni/progettoBici/progettoBici.iml" />
+      <module fileurl="file://$PROJECT_DIR$/progetto_bici/progetto_bici.iml" filepath="$PROJECT_DIR$/progetto_bici/progetto_bici.iml" />
+      <module fileurl="file://$PROJECT_DIR$/progetto_classe/progetto_classe.iml" filepath="$PROJECT_DIR$/progetto_classe/progetto_classe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/progetto_film/progetto_film.iml" filepath="$PROJECT_DIR$/progetto_film/progetto_film.iml" />
+      <module fileurl="file://$PROJECT_DIR$/progetto_pokemon/progetto_pokemon.iml" filepath="$PROJECT_DIR$/progetto_pokemon/progetto_pokemon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/verifica/verifica.iml" filepath="$PROJECT_DIR$/verifica/verifica.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vrappedClass/vrappedClass.iml" filepath="$PROJECT_DIR$/vrappedClass/vrappedClass.iml" />
+    </modules>
+  </component>
+</project>

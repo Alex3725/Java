@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="UNO">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ProgettiPerpetui/UNO.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
